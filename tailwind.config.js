@@ -5,15 +5,14 @@ module.exports = {
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
         "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
-        "./node_modules/flowbite-react/**/*.js",
         "./pages/**/*.{ts,tsx}",
         "./public/**/*.html",
     ],
     theme: {
         extend: {
             fontFamily: {
-                exotwo: "var(--font-exotwo)",
                 exo: "var(--font-exo)",
+                exotwo: "var(--font-exotwo)",
                 nunitosans: "var(--font-nunitosans)",
             },
             colors: {
@@ -21,13 +20,25 @@ module.exports = {
                 "bg-black": "#191919",
                 "green-principal": "#25E525",
                 "green-secundary": "#84E341",
-                principal: "#282828",
-                secundary: "#282828",
-                terciary: "#282828",
-                quaternary: "#282828",
-                whiter: "#282828",
+                primary: "#282828",
+                secundary: "#54595F",
+                terciary: "#777777",
+                quaternary: "#CFCFCF",
+                whiter: "#FFFFFF",
+            },
+            height: {
+                168: "42rem",
+            },
+            backgroundImage: {
+                "hero-pattern": "url('/public/insta1.jpg')",
             },
         },
     },
-    plugins: [require("flowbite/plugin")],
+    plugins: [
+        require("flowbite/plugin"),
+        function ({ addVariant }) {
+            addVariant("child", "& > *");
+            addVariant("child-hover", "& > *:hover");
+        },
+    ],
 };
