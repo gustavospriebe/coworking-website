@@ -19,7 +19,7 @@
         --border: 214.3 31.8% 91.4%;
         --input: 214.3 31.8% 91.4%;
 
-        --primary: #282828;
+        --primary: 222.2 47.4% 11.2%;
         --primary-foreground: 210 40% 98%;
 
         --secondary: 210 40% 96.1%;
@@ -67,6 +67,16 @@
         --ring: 216 34% 17%;
 
         --radius: 0.5rem;
+    }
+
+    .hero-bg {
+        
+        background: linear-gradient(0deg, rgba(25, 25, 25, 0.7), rgba(25, 25, 25, 0.7)), url("../public/banner.webp");
+        background-position: 20% 80%;
+        
+        @media (min-width: 640px) {
+        background-position: 24% 75%;
+        }
     }
 }
 

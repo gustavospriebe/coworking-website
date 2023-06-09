@@ -1,5 +1,5 @@
 import { Exo, Exo_2, Nunito_Sans } from "next/font/google";
-import "./globals.css";
+import "../../styles/globals.css";
 
 const exotwo = Exo_2({ subsets: ["latin"], variable: "--font-exotwo" });
 const exo = Exo({ subsets: ["latin"], variable: "--font-exo" });
