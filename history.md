@@ -47,6 +47,9 @@
 //     </div>
 // </Navbar>
 
+
+
+
 // <main>
 //     <Navbar fluid className="flex h-20 w-full items-center justify-between bg-bg-black px-9 py-6 sm:h-24 lg:h-28 lg:px-12">
 //         <Image src={logo} alt="" className="h-10 w-auto sm:h-12" />

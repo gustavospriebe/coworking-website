@@ -1,6 +1,7 @@
+import "@/styles/globals.css";
 import { Exo, Exo_2, Nunito_Sans } from "next/font/google";
-import "../../styles/globals.css";
 
+//Fonts
 const exotwo = Exo_2({ subsets: ["latin"], variable: "--font-exotwo" });
 const exo = Exo({ subsets: ["latin"], variable: "--font-exo" });
 const nunitosans = Nunito_Sans({
@@ -19,7 +20,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="pt-BR">
+            <head />
             <body
                 className={`${exo.variable} ${exotwo.variable} ${nunitosans.variable}`}
             >
