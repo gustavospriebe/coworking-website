@@ -4,6 +4,7 @@ export interface NavItem {
     disabled?: boolean;
 }
 
+
 export interface NavMenu {
     NavMenu: NavItem[];
 }

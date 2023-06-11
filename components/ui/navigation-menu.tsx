@@ -12,7 +12,7 @@ const NavigationMenu = React.forwardRef<
     <NavigationMenuPrimitive.Root
         ref={ref}
         className={cn(
-            "relative z-10 flex flex-1 items-center justify-center",
+            "relative z-10 flex items-center justify-center",
             className
         )}
         {...props}
@@ -45,7 +45,7 @@ const navigationMenuTriggerStyle = cva(
 );
 
 const navigationBarTriggerStyle = cva(
-    "inline-flex items-center justify-center rounded-md text-whiter text-sm font-medium transition-colors focus:outline-none focus:bg-accent focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none bg-bg-black hover:bg-accent hover:text-accent-foreground data-[state=open]:bg-accent/50 data-[active]:bg-accent/50 h-10 py-2 px-4 group w-max hover:underline"
+    "flex items-center justify-center rounded-md text-whiter hover:text-whiter text-sm font-medium transition-colors focus:outline-none focus:bg-accent focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none bg-bg-black  hover:text-accent-foreground data-[state=open]:bg-accent/50 data-[active]:bg-accent/50 h-10 py-2 px-4 group w-max hover:underline"
 );
 
 const NavigationMenuTrigger = React.forwardRef<
