@@ -12,12 +12,12 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useState } from "react";
 // import { Icons } from "@/components/icons";
+import closemenu from "@/assets/closemenu.svg";
 import logo from "@/assets/logo.svg";
 import menu from "@/assets/menu.svg";
-import closemenu from "@/assets/closemenu.svg";
 import Image from "next/image";
-import { Button, buttonVariants } from "./ui/button";
 import NavMobileMenu from "./NavMobileMenu";
+import { Button, buttonVariants } from "./ui/button";
 
 interface NavigationMenuComponentProps {
     children?: React.ReactNode;
@@ -35,7 +35,7 @@ export function NavigationMenuComponent({
                 <Image
                     alt="Flowbite React Logo"
                     className="
-                    h-10 w-24 sm:h-12 sm:w-28 lg:h-16 lg:w-36"
+                    h-10 w-24 sm:h-12 sm:w-28 lg:h-16 lg:w-32"
                     src={logo}
                 />
             </Link>
@@ -76,19 +76,13 @@ export function NavigationMenuComponent({
                     onClick={() => setShowMobileMenu(!showMobileMenu)}
                 >
                     {showMobileMenu ? (
-                        <Image
-                            alt=""
-                            src={closemenu}
-                            className="h-full w-full"
-                        />
+                        <Image alt="" src={closemenu} className="h-8 w-8" />
                     ) : (
-                        <Image alt="" src={menu} className="h-full w-full" />
+                        <Image alt="" src={menu} className="h-8 w-8" />
                     )}
                 </Button>
             </div>
-            {showMobileMenu && items && (
-                <NavMobileMenu items={items}>{children}</NavMobileMenu>
-            )}
+            {showMobileMenu && items && <NavMobileMenu items={items} />}
         </div>
     );
 }

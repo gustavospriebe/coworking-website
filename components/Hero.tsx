@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export function Hero() {
     return (
-        <div>
-            <section className="hero-bg space-y-6 py-36 lg:py-48">
+        <div className="hero-bg w-full">
+            <div className=" m-auto max-w-6xl space-y-6 py-36 lg:py-48">
                 <div className=" flex flex-1 flex-col items-center gap-7 text-center">
                     <span className="font-exotwo text-2xl font-extrabold text-whiter sm:text-3xl lg:text-4xl xl:text-5xl ">
                         Um ponto de encontro e
@@ -45,7 +45,7 @@ export function Hero() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     );
 }

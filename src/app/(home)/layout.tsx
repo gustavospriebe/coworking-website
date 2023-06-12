@@ -1,3 +1,4 @@
+import { CardComponent } from "@/components/Card";
 import { NavigationMenuComponent } from "@/components/NavMenu";
 
 interface HomeProps {

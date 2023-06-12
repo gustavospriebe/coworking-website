@@ -69,13 +69,25 @@
         --radius: 0.5rem;
     }
 
+    .img-opacity {
+        background: linear-gradient(
+            0deg,
+            rgba(25, 25, 25, 0.7),
+            rgba(25, 25, 25, 0.7)
+        );
+    }
+
     .hero-bg {
-        
-        background: linear-gradient(0deg, rgba(25, 25, 25, 0.7), rgba(25, 25, 25, 0.7)), url("../public/banner.webp");
+        background: linear-gradient(
+                0deg,
+                rgba(25, 25, 25, 0.7),
+                rgba(25, 25, 25, 0.7)
+            ),
+            url("../public/banner.webp");
         background-position: 20% 80%;
-        
+
         @media (min-width: 640px) {
-        background-position: 24% 75%;
+            background-position: 24% 75%;
         }
     }
 }

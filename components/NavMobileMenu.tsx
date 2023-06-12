@@ -2,14 +2,13 @@ import { useLockBody } from "@/hooks/use-lock-body";
 import { cn } from "@/lib/utils";
 import { NavItem } from "@/types";
 import Link from "next/link";
-import React from "react";
+import { Separator } from "./ui/separator";
 
 interface NavMobileMenuProps {
-    children?: React.ReactNode;
     items: NavItem[];
 }
 
-export default function NavMobileMenu({ children, items }: NavMobileMenuProps) {
+export default function NavMobileMenu({ items }: NavMobileMenuProps) {
     // prevent scrolling while mobile menu is open
     useLockBody();
 
@@ -20,8 +19,9 @@ export default function NavMobileMenu({ children, items }: NavMobileMenuProps) {
             )}
         >
             <div className="relative z-20 grid gap-4 rounded-md bg-bg-black p-4 text-whiter shadow-md">
-                <span className="pl-2 text-2xl font-bold underline">Menu</span>
-                <nav className="flex flex-col  text-sm">
+                <span className="pl-2 text-2xl font-bold">Menu</span>
+                <Separator className="mx-2  bg-secundary" />
+                <nav className="flex flex-col  gap-4 text-sm">
                     {items.map((item, index) => (
                         <Link
                             key={index}
