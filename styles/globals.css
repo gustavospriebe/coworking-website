@@ -77,6 +77,34 @@
         );
     }
 
+    .card-active {
+        background-color: #ffffff0e;
+    }
+
+    .card-active::before {
+        boxshadow: 0 4px 16px -12px #ffffff0e;
+    }
+
+    .card-active:active {
+        transition: transform 150ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .card-active:focus:not(:focus-visible) {
+        boxshadow: none;
+    }
+
+    .card-ghost:hover {
+        background-color: #ffffff0e;
+    }
+
+    .card-ghost:focus:not(:focus-visible) {
+        boxshadow: none;
+    }
+
+    .card-ghost::before {
+        boxshadow: 0 4px 16px -12px #ffffff0e;
+    }
+
     .hero-bg {
         background: linear-gradient(
                 0deg,
