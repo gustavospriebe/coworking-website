@@ -11,8 +11,9 @@ export function ProgressBar() {
 
     useEffect(() => {
         
-        setProgress(100)
-    }, []);
+setProgress(100)
+    }
+    , [progress]);
 
-    return <Progress className="absolute bottom-0" value={progress} />;
+    return <Progress className="w-full" value={progress} />;
 }

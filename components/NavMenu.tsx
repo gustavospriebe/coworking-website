@@ -39,7 +39,7 @@ export function NavigationMenuComponent({
                     src={logo}
                 />
             </Link>
-            <NavigationMenu className="hidden   bg-bg-black md:flex">
+            <NavigationMenu className="hidden bg-bg-black md:flex">
                 <NavigationMenuList>
                     {items.length
                         ? items.map((item, index) => (
