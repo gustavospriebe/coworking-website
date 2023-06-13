@@ -1,19 +1,11 @@
-import { Button } from "@/components/ui/button";
 import {
     Card,
-    CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
 import { cn } from "@/lib/utils";
-import { BellRing, Check } from "lucide-react";
-import { useEffect, useState } from "react";
-import { ProgressBar } from "./Progress";
-import { Carousel } from "types";
-
+import { CarouselItem } from "types";
 
 const notifications = [
     {
@@ -26,7 +18,7 @@ type CardProps = React.ComponentProps<typeof Card>;
 
 interface CardComponentProps extends CardProps {
     activeHighlight: number;
-    items: Carousel[];
+    items: CarouselItem[];
     setActiveHighlight: (x: number) => void;
 }
 
@@ -38,13 +30,12 @@ export function CardComponent({
     ...props
 }: CardComponentProps) {
     return (
-        // scroll-m-0  overflow-y-hidden hidden overflow-x-scroll
-        <div className="space-y-2 w-full">
+        <div className="-ml-10 grid list-none grid-cols-2 gap-4 pl-5 lg:grid-cols-1 lg:gap-3">
             {items.map((_, index) => (
                 <Card
                     key={index}
                     className={cn(
-                        "cursor-pointer border-none p-0 text-whiter shadow-md",
+                        "flex cursor-pointer items-center border-none p-0 text-whiter shadow-md  sm:items-start sm:justify-start sm:text-left",
                         activeHighlight === index
                             ? "card-active"
                             : "card-ghost",
@@ -54,10 +45,13 @@ export function CardComponent({
                     onMouseDown={() => setActiveHighlight(index)}
                     onClick={() => setActiveHighlight(index)}
                 >
-                    <CardHeader className="space-y-2 p-4">
-                        <CardTitle className="font-bold">
-                        {items[index].title}
+                    <CardHeader className="space-y-2  p-4">
+                        <CardTitle className="font-exotwo  font-bold">
+                            {items[index].title}
                         </CardTitle>
+                        <CardDescription className="hidden font-nunitosans sm:flex">
+                            {items[index].description}
+                        </CardDescription>
                     </CardHeader>
                 </Card>
             ))}
