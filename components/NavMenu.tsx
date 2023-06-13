@@ -11,7 +11,6 @@ import { navConfig } from "@/config/NavMenu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useState } from "react";
-// import { Icons } from "@/components/icons";
 import closemenu from "@/assets/closemenu.svg";
 import logo from "@/assets/logo.svg";
 import menu from "@/assets/menu.svg";
@@ -50,7 +49,10 @@ export function NavigationMenuComponent({
                                       passHref
                                   >
                                       <NavigationMenuLink
-                                          className={navigationBarTriggerStyle()}
+                                          className={cn(
+                                              navigationBarTriggerStyle(),
+                                              "font-exo"
+                                          )}
                                       >
                                           {item.title}
                                       </NavigationMenuLink>
@@ -65,7 +67,7 @@ export function NavigationMenuComponent({
                     href="/"
                     className={cn(
                         buttonVariants({ size: "sm" }),
-                        "text-principal gap-2 bg-green-principal hover:bg-green-principal/70"
+                        "text-principal gap-2 bg-green-principal font-exotwo hover:bg-green-principal/70"
                     )}
                 >
                     Entre em contato

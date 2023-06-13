@@ -105,13 +105,12 @@
         boxshadow: 0 4px 16px -12px #ffffff0e;
     }
 
-
     .carousel-bg {
         background: linear-gradient(
-                0deg,
-                rgba(25, 25, 25, 0.7),
-                rgba(25, 25, 25, 0.7)
-            );
+            0deg,
+            rgba(25, 25, 25, 0.7),
+            rgba(25, 25, 25, 0.7)
+        );
     }
 
     .hero-bg {

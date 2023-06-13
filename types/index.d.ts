@@ -17,3 +17,12 @@ export interface CarouselItem {
 export interface Carousel {
     Carousel: CarouselItem[];
 }
+
+export interface PartnersItem {
+    name?: string;
+    logo: StaticImageData;
+}
+
+export interface Partners {
+    Partners: PartnersItem[];
+}

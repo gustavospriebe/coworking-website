@@ -8,13 +8,17 @@ export function Hero() {
         <div className="hero-bg w-full">
             <div className=" m-auto max-w-6xl space-y-6 py-36 lg:py-48">
                 <div className=" flex flex-1 flex-col items-center gap-7 text-center">
-                    <span className="font-exotwo text-2xl font-extrabold text-whiter sm:text-3xl lg:text-4xl xl:text-5xl ">
-                        Um ponto de encontro e
-                        <p className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl">
-                            conexões construtivas
-                        </p>
-                    </span>
-                    <p className="max-w-[42rem] font-exo text-sm leading-normal text-quaternary sm:text-lg sm:leading-8  lg:text-xl">
+                    <p className="mt-8 font-exotwo text-4xl font-bold tracking-tight text-whiter md:text-7xl lg:mt-0">
+                        Um ponto de
+                        <span className="md:block">
+                            {" "}
+                            encontro e{" "}
+                            <span className="text-green-secundary lg:text-whiter">
+                                conexões construtivas
+                            </span>
+                        </span>
+                    </p>
+                    <p className="max-w-3xl font-exo text-sm leading-normal text-quaternary sm:text-lg sm:leading-8  lg:text-xl">
                         Sua empresa em um espaço referência na cidade de Tubarão
                     </p>
                     <div className="flex flex-1 flex-col items-center justify-center gap-7 sm:flex-row ">
@@ -22,7 +26,7 @@ export function Hero() {
                             href="/login"
                             className={cn(
                                 buttonVariants({ size: "lg" }),
-                                "text-principal gap-2 bg-green-principal hover:bg-green-principal/70"
+                                "text-principal gap-2 bg-green-principal font-exotwo hover:bg-green-principal/70"
                             )}
                         >
                             <p>Entre em contato</p>
@@ -38,7 +42,7 @@ export function Hero() {
                                     variant: "outline",
                                     size: "lg",
                                 }),
-                                "border-green-principal font-medium text-whiter hover:bg-green-principal/70 hover:text-whiter "
+                                "border-green-principal font-exotwo font-medium text-whiter hover:bg-green-principal/70 hover:text-whiter "
                             )}
                         >
                             Agende uma visita

@@ -10,7 +10,6 @@ export default function Home({ children }: HomeProps) {
         <div className="">
             <NavigationMenuComponent />
             {children}
-            {/* <CardComponent /> */}
             {/* <Footer /> */}
         </div>
     );

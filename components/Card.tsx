@@ -7,13 +7,6 @@ import {
 import { cn } from "@/lib/utils";
 import { CarouselItem } from "types";
 
-const notifications = [
-    {
-        title: "Your call has been confirmed.",
-        description: "1 hour ago",
-    },
-];
-
 type CardProps = React.ComponentProps<typeof Card>;
 
 interface CardComponentProps extends CardProps {

@@ -15,7 +15,7 @@ export default function NavMobileMenu({ items }: NavMobileMenuProps) {
     return (
         <div
             className={cn(
-                "fixed inset-0 top-20 z-50  bg-bg-black/60  p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden"
+                "fixed inset-0 top-20 z-50  bg-bg-black/60  p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden font-exo"
             )}
         >
             <div className="relative z-20 grid gap-4 rounded-md bg-bg-black p-4 text-whiter shadow-md">
