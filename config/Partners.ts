@@ -58,4 +58,10 @@ export const partnersConfig: Partners = {
             logo: logo,
         },
     ],
+    Videos: [
+        "https://almazco.com.br/wp-content/uploads/2022/06/Almaz-Mari_1.mp4",
+        "https://almazco.com.br/wp-content/uploads/2022/06/Almaz-Atila_1.mp4",
+        "https://almazco.com.br/wp-content/uploads/2022/06/Almaz-Easy_1.mp4",
+        "https://almazco.com.br/wp-content/uploads/2022/06/Almaz-Yuri_1.mp4",
+    ],
 };

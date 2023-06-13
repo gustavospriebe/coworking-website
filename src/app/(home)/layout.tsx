@@ -1,5 +1,4 @@
-import { CardComponent } from "@/components/Card";
-import { NavigationMenuComponent } from "@/components/NavMenu";
+import { NavigationMenuComponent } from "@/components/NavBar/NavMenu";
 
 interface HomeProps {
     children: React.ReactNode;

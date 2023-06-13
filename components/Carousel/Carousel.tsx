@@ -4,8 +4,8 @@ import { carouselConfig } from "@/config/Carousel";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import "react-awesome-slider/dist/styles.css";
+import { Separator } from "../ui/separator";
 import { CardComponent } from "./Card";
-import { Separator } from "./ui/separator";
 
 export function CarouselComponent() {
     const items = carouselConfig.Carousel;

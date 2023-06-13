@@ -1,5 +1,8 @@
 "use client";
 
+import closemenu from "@/assets/closemenu.svg";
+import logo from "@/assets/logo.svg";
+import menu from "@/assets/menu.svg";
 import {
     NavigationMenu,
     NavigationMenuItem,
@@ -9,14 +12,11 @@ import {
 } from "@/components/ui/navigation-menu";
 import { navConfig } from "@/config/NavMenu";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import closemenu from "@/assets/closemenu.svg";
-import logo from "@/assets/logo.svg";
-import menu from "@/assets/menu.svg";
-import Image from "next/image";
+import { Button, buttonVariants } from "../ui/button";
 import NavMobileMenu from "./NavMobileMenu";
-import { Button, buttonVariants } from "./ui/button";
 
 interface NavigationMenuComponentProps {
     children?: React.ReactNode;

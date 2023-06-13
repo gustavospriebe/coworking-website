@@ -1,9 +1,6 @@
-import { CarouselComponent } from "@/components/Carousel";
-import {Partners} from "@/components/Partners";
-import { Hero } from "@/components/Hero";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { CarouselComponent } from "@/components/Carousel/Carousel";
+import { Hero } from "@/components/Hero/Hero";
+import { Partners } from "@/components/Partners/Partners";
 
 export default function Home() {
     return (

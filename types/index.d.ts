@@ -20,9 +20,19 @@ export interface Carousel {
 
 export interface PartnersItem {
     name?: string;
-    logo: StaticImageData;
+    logo?: StaticImageData;
 }
 
 export interface Partners {
     Partners: PartnersItem[];
+    Videos: string[];
+}
+
+export interface FAQItem {
+    title: string;
+    description: string;
+}
+
+export interface FAQ {
+    FAQ: FAQItem[];
 }

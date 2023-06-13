@@ -2,7 +2,7 @@ import { useLockBody } from "@/hooks/use-lock-body";
 import { cn } from "@/lib/utils";
 import { NavItem } from "@/types";
 import Link from "next/link";
-import { Separator } from "./ui/separator";
+import { Separator } from "../ui/separator";
 
 interface NavMobileMenuProps {
     items: NavItem[];
@@ -15,7 +15,7 @@ export default function NavMobileMenu({ items }: NavMobileMenuProps) {
     return (
         <div
             className={cn(
-                "fixed inset-0 top-20 z-50  bg-bg-black/60  p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden font-exo"
+                "fixed inset-0 top-20 z-50  bg-bg-black/60  p-6 pb-32 font-exo shadow-md animate-in slide-in-from-bottom-80 md:hidden"
             )}
         >
             <div className="relative z-20 grid gap-4 rounded-md bg-bg-black p-4 text-whiter shadow-md">

@@ -1,27 +1,34 @@
 "use client";
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer from "react-player";
 import { useEffect, useState } from "react";
+import { partnersConfig } from "@/config/Partners";
 
 export function Player() {
+    const items = partnersConfig.Videos;
     const [isLoaded, setIsLoaded] = useState(false);
+    const [video, setVideo] = useState(0);
+
+    function changeState() {
+        setVideo((prevState) => (prevState + 1) % items.length);
+    }
 
     useEffect(() => {
         setIsLoaded(true);
-    }, []);
+    }, [video]);
 
     return (
         <>
             {isLoaded ? (
                 <ReactPlayer
+                    onEnded={changeState}
                     playing
+                    muted
                     width="272px"
                     height="572px"
                     controls
-                    url="https://almazco.com.br/wp-content/uploads/2022/06/Almaz-Mari_1.mp4"
+                    url={items[video]}
                 />
             ) : null}
         </>
     );
 }
-
-// "https://almazco.com.br/wp-content/uploads/2022/06/Almaz-Atila_1.mp4"
