@@ -1,6 +1,7 @@
 import cafe from "@/public/cafe.jpg";
 import Image from "next/image";
 import { partnersConfig } from "@/config/Partners";
+import { Player } from "@/components/Player";
 
 export function Partners() {
     const items = partnersConfig.Partners;
@@ -20,22 +21,24 @@ export function Partners() {
                                     <div className="absolute -left-[17px] top-[124px] h-[46px] w-[3px] rounded-l-lg bg-gray-800"></div>
                                     <div className="absolute -left-[17px] top-[178px] h-[46px] w-[3px] rounded-l-lg bg-gray-800"></div>
                                     <div className="absolute -right-[17px] top-[142px] h-[64px] w-[3px] rounded-r-lg bg-gray-800"></div>
-                                    <div className="h-[572px] w-[272px] overflow-hidden rounded-[2rem] bg-white dark:bg-gray-800">
-                                        <p className="mt-4 max-w-xl text-lg tracking-tight text-gray-600">
-                                            Whether youre a beginner or an
-                                            experienced programmer, our SaaS
-                                            product offers the tools you need to
-                                            be successful.
-                                        </p>
+                                    <div className="h-[572px] w-[272px] overflow-hidden rounded-[2rem] bg-white dark:bg-gray-800 relative">
+                                    <Player />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-2 lg:mt-0 lg:grid-cols-3">
-                        {items.map((item) => (
-                            <div className="bg-gray-5 col-span-1 flex justify-center px-8 py-8">
-                                <Image className="max-h-12" src={item.logo} alt="" />
+                        {items.map((item, index) => (
+                            <div
+                                key={index}
+                                className="bg-gray-5 col-span-1 flex justify-center px-8 py-8"
+                            >
+                                <Image
+                                    className="max-h-12"
+                                    src={item.logo}
+                                    alt=""
+                                />
                             </div>
                         ))}
                     </div>
