@@ -29,8 +29,8 @@ export interface Partners {
 }
 
 export interface FAQItem {
-    title: string;
-    description: string;
+    question: string;
+    answer: string;
 }
 
 export interface FAQ {

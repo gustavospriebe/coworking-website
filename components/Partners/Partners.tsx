@@ -1,7 +1,7 @@
-import cafe from "@/public/cafe.jpg";
 import Image from "next/image";
 import { partnersConfig } from "@/config/Partners";
 import { Player } from "@/components/Partners/Player";
+import { SectionHeader } from "@/components/SectionHeader";
 
 export function Partners() {
     const items = partnersConfig.Partners;
@@ -13,12 +13,11 @@ export function Partners() {
                     <div>
                         <div className="w-full lg:p-10">
                             <div className="space-y-8">
-                                <p className="text-center font-exotwo text-4xl font-medium text-primary">
-                                    Quem faz parte do{" "}
-                                    <span className="text-green-principal underline">
-                                        Almaz
-                                    </span>
-                                </p>
+                                <SectionHeader
+                                    sectionName="Parceiros"
+                                    sectionHeader="Quem faz parte do Almaz"
+                                    colorHeader="text-black"
+                                />
                                 <div className="relative mx-auto h-[600px] w-[300px] rounded-[2.5rem] border-[14px] border-gray-800 bg-gray-800 shadow-xl dark:border-gray-800">
                                     <div className="absolute left-1/2 top-0 h-[18px] w-[148px] -translate-x-1/2 rounded-b-[1rem] bg-gray-800"></div>
                                     <div className="absolute -left-[17px] top-[124px] h-[46px] w-[3px] rounded-l-lg bg-gray-800"></div>

@@ -1,10 +1,10 @@
 "use client";
 
+import { SectionHeader } from "@/components/SectionHeader";
 import { carouselConfig } from "@/config/Carousel";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import "react-awesome-slider/dist/styles.css";
-import { Separator } from "../ui/separator";
 import { CardComponent } from "./Card";
 
 export function CarouselComponent() {
@@ -34,17 +34,11 @@ export function CarouselComponent() {
                                 src={items[activeHighlight].image}
                             />
                             <div className="mt-6 flex flex-col lg:mt-0">
-                                <div className="max-w-[420px]">
-                                    <div>
-                                        <p className="mb-2 font-exotwo text-green-secundary">
-                                            Nossa Estrutura
-                                        </p>
-                                        <p className="font-exo text-2xl font-medium tracking-tight text-whiter sm:text-3xl">
-                                            Conheça tudo que podemos oferecer
-                                        </p>
-                                        <Separator className="mt-5 bg-whiter/20" />
-                                    </div>
-                                </div>
+                                <SectionHeader
+                                    sectionName="Nossa Estrutura"
+                                    sectionHeader="Conheça tudo que podemos oferecer"
+                                    colorSeparator="bg-whiter"
+                                />
                                 <div className="mx-auto mt-6 lg:max-w-7xl">
                                     <CardComponent
                                         activeHighlight={activeHighlight}
