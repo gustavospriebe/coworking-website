@@ -13,7 +13,8 @@ export default function Home() {
             {/* planos preto */}
             <Partners />
             <CarouselComponent />
-            {/* <FAQ /> fazer preto */}
+            <FAQ />
+            {/* blog preto */}
             <Contact />
             <Footer />
         </>

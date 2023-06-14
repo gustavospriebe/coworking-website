@@ -21,7 +21,7 @@ export function SectionHeader({
             <p
                 className={cn(
                     "mb-2 font-exotwo",
-                    colorName ?? "text-green-secundary"
+                    colorName ?? "text-green-principal"
                 )}
             >
                 {sectionName}
