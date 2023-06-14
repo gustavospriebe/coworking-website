@@ -21,7 +21,7 @@ export function Player() {
             {isLoaded ? (
                 <ReactPlayer
                     onEnded={changeState}
-                    playing
+                    // playing
                     muted
                     width="272px"
                     height="572px"

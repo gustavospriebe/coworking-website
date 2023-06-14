@@ -5,7 +5,7 @@ export const navConfig: NavMenu = {
         {
             title: "Features",
             // # serve pra linkar a uma id da mesma página e faz com que o scroll vá até ela
-            href: "/#features",
+            href: "/#teste",
         },
         {
             title: "Pricing",

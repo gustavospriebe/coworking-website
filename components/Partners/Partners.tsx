@@ -8,10 +8,10 @@ export function Partners() {
 
     return (
         <section aria-labelledby="logocloud-two">
-            <div className="w-full items-center px-7 py-16 md:px-12 lg:px-16 lg:py-24 ">
+            <div className="w-full px-7 py-16 md:px-12 lg:px-16 lg:py-24 ">
                 <div className=" mx-auto w-full max-w-7xl lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
                     <div>
-                        <div className="w-full lg:p-10">
+                        <div className="w-full">
                             <div className="space-y-8">
                                 <SectionHeader
                                     sectionName="Parceiros"

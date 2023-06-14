@@ -24,7 +24,7 @@ export function CarouselComponent() {
     }, [activeHighlight, items.length]);
     return (
         <>
-            <div className="w-full items-center bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24 ">
+            <div id="teste" className="w-full bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24 ">
                 <div className="mx-auto w-full max-w-7xl">
                     <div className="relative m-auto items-center align-middle">
                         <div className="items-center gap-12 text-left lg:inline-flex lg:gap-20">
@@ -37,7 +37,7 @@ export function CarouselComponent() {
                                 <SectionHeader
                                     sectionName="Nossa Estrutura"
                                     sectionHeader="Conheça tudo que podemos oferecer"
-                                    colorSeparator="bg-whiter"
+                                    colorSeparator="bg-whiter/20"
                                 />
                                 <div className="mx-auto mt-6 lg:max-w-7xl">
                                     <CardComponent

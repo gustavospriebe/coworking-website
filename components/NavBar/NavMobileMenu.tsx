@@ -6,9 +6,10 @@ import { Separator } from "../ui/separator";
 
 interface NavMobileMenuProps {
     items: NavItem[];
+    setShowMobileMenu: (boolean: boolean) => void;
 }
 
-export default function NavMobileMenu({ items }: NavMobileMenuProps) {
+export default function NavMobileMenu({ items, setShowMobileMenu }: NavMobileMenuProps) {
     // prevent scrolling while mobile menu is open
     useLockBody();
 
@@ -26,6 +27,7 @@ export default function NavMobileMenu({ items }: NavMobileMenuProps) {
                         <Link
                             key={index}
                             href={item.disabled ? "#" : item.href}
+                            onClick={() => setShowMobileMenu(false)}
                             className={cn(
                                 "w-full items-center rounded-md p-2 text-sm font-medium  hover:underline",
                                 item.disabled && "cursor-not-allowed opacity-60"

@@ -11,7 +11,7 @@ export function FAQ() {
     const items = faqConfig.FAQ;
 
     return (
-        <div className="w-full items-center px-7 py-16 md:px-12 lg:px-16 lg:py-24">
+        <div className="w-full px-7 py-16 md:px-12 lg:px-16 lg:py-24">
             <div className="mx-auto w-full max-w-7xl">
                 <div>
                     <p className="mb-2 font-exotwo text-green-secundary">FAQ</p>

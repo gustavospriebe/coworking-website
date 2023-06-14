@@ -37,7 +37,7 @@ export function SectionHeader({
             <Separator
                 className={cn(
                     "my-5",
-                    colorSeparator ? `${colorSeparator}/20` : "bg-black/20"
+                    colorSeparator ?? "bg-black/20"
                 )}
             />
         </div>

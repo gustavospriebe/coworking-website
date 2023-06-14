@@ -5,15 +5,15 @@ import Link from "next/link";
 
 export function Hero() {
     return (
-        <div className="hero-bg w-full">
-            <div className=" m-auto max-w-6xl space-y-6 py-36 lg:py-48">
+        <div className="hero-bg w-full px-7 md:px-12 lg:px-16">
+            <div className=" mx-auto w-full max-w-7xl space-y-6 py-36 lg:py-48">
                 <div className=" flex flex-1 flex-col items-center gap-7 text-center">
                     <p className="mt-8 font-exotwo text-4xl font-bold tracking-tight text-whiter md:text-7xl lg:mt-0">
                         Um ponto de
                         <span className="md:block">
                             {" "}
                             encontro e{" "}
-                            <span className="text-green-secundary lg:text-whiter">
+                            <span className="text-green-secundary md:text-whiter">
                                 conexões construtivas
                             </span>
                         </span>
