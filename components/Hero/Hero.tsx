@@ -23,7 +23,8 @@ export function Hero() {
                     </p>
                     <div className="flex flex-1 flex-col items-center justify-center gap-7 sm:flex-row ">
                         <Link
-                            href="/login"
+                            href="https://api.whatsapp.com/send?phone=5548996294577&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida"
+                            target="_blank"
                             className={cn(
                                 buttonVariants({ size: "lg" }),
                                 "text-principal gap-2 bg-green-principal font-exotwo hover:bg-green-principal/70"
@@ -33,8 +34,7 @@ export function Hero() {
                             <ArrowRight size={18} />
                         </Link>
                         <Link
-                            href="#"
-                            // {siteConfig.links.github}
+                            href="https://api.whatsapp.com/send?phone=5548996294577&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20agendar%20uma%20visita"
                             target="_blank"
                             rel="noreferrer"
                             className={cn(

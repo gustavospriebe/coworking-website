@@ -31,7 +31,7 @@ export function NavigationMenuComponent({
     return (
         // bg-bg-black px-6 sm:px-9 lg:px-12
 
-        <div className="w-full bg-bg-black px-7 py-5 md:px-12 lg:px-16">
+        <div className="w-full bg-bg-black px-7 py-4 md:px-12 lg:px-16">
             <div className="mx-auto w-full max-w-7xl" x-data="{open: false}">
                 <div className="flex items-center justify-between bg-bg-black">
                     <Link href="/" className="">

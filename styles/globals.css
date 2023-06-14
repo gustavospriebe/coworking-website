@@ -113,6 +113,11 @@
         );
     }
 
+    .map {
+        filter: brightness(50%) contrast(128%) saturate(0%) blur(0px)
+            hue-rotate(20deg);
+    }
+
     .hero-bg {
         background: linear-gradient(
                 0deg,
