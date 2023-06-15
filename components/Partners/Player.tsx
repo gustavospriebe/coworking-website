@@ -1,5 +1,5 @@
 "use client";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 import { useEffect, useState } from "react";
 import { partnersConfig } from "@/config/Partners";
 
@@ -21,7 +21,7 @@ export function Player() {
             {isLoaded ? (
                 <ReactPlayer
                     onEnded={changeState}
-                    // playing
+                    playing
                     muted
                     width="272px"
                     height="572px"

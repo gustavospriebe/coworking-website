@@ -32,7 +32,7 @@ export default function NavMobileMenu({
                             href={item.disabled ? "#" : item.href}
                             onClick={() => setShowMobileMenu(false)}
                             className={cn(
-                                "w-full items-center rounded-md p-2 text-sm font-medium  hover:underline",
+                                "w-full select-none items-center rounded-md p-2 text-sm font-medium  hover:underline",
                                 item.disabled && "cursor-not-allowed opacity-60"
                             )}
                         >

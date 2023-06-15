@@ -44,7 +44,7 @@ export function CarouselComponent() {
                                     target="_blank"
                                     className={cn(
                                         buttonVariants({ size: "lg" }),
-                                        "text-principal max-w-[270px] bg-green-principal font-exotwo hover:bg-green-principal/70 sm:w-2/4"
+                                        "text-principal max-w-[220px] bg-green-principal font-exotwo hover:bg-green-principal/70 sm:w-2/4"
                                     )}
                                 >
                                     <p>Conheça o Almaz</p>
