@@ -20,7 +20,7 @@ export function SectionHeader({
         <div>
             <p
                 className={cn(
-                    "mb-2 font-exotwo",
+                    "mb-2 inline font-semibold p-1 font-exotwo",
                     colorName ?? "text-green-principal"
                 )}
             >
@@ -35,10 +35,7 @@ export function SectionHeader({
                 {sectionHeader}
             </p>
             <Separator
-                className={cn(
-                    "my-5",
-                    colorSeparator ?? "bg-black/20"
-                )}
+                className={cn("my-5", colorSeparator ?? "bg-black/20")}
             />
         </div>
     );

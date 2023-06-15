@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { faqConfig } from "@/config/FAQ,";
 import { Separator } from "../ui/separator";
+import { SectionHeader } from "../SectionHeader";
 
 export function FAQ() {
     const items = faqConfig.FAQ;
@@ -14,11 +15,12 @@ export function FAQ() {
         <div className="w-full px-7 py-16 md:px-12 lg:px-16 lg:py-24">
             <div className="mx-auto w-full max-w-7xl">
                 <div>
-                    <p className="mb-2 font-exotwo text-green-secundary">FAQ</p>
-                    <p className="font-exo text-2xl font-medium tracking-tight text-black sm:text-4xl">
-                        Perguntas frequentes que recebemos
-                    </p>
-                    <Separator className="my-5 bg-black/20" />
+                    <SectionHeader
+                        sectionName="FAQ"
+                        sectionHeader="Perguntas frequentes que recebemos"
+                        colorSeparator="bg-black/20"
+                        colorHeader="text-black"
+                    />
                 </div>
                 <div className="">
                     <Accordion
