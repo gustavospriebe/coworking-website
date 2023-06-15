@@ -34,7 +34,7 @@ export function NavigationMenuComponent({
         <div className="w-full bg-bg-black px-7 py-4 md:px-12 lg:px-16">
             <div className="mx-auto w-full max-w-7xl" x-data="{open: false}">
                 <div className="flex items-center justify-between bg-bg-black">
-                    <Link href="/" className="">
+                    <Link href="/" id="btn-logo">
                         <Image
                             alt="Flowbite React Logo"
                             className="
@@ -51,6 +51,7 @@ export function NavigationMenuComponent({
                                               href={item.href}
                                               legacyBehavior
                                               passHref
+                                              id={`nav-link-${index}`}
                                           >
                                               <NavigationMenuLink
                                                   className={cn(
@@ -69,6 +70,7 @@ export function NavigationMenuComponent({
                     <div className="flex items-center gap-2 sm:gap-2">
                         <Link
                             href="/"
+                            id="btn-contact-nav"
                             className={cn(
                                 buttonVariants({ size: "sm" }),
                                 "text-principal gap-2 bg-green-principal font-exotwo hover:bg-green-principal/70"
@@ -78,6 +80,7 @@ export function NavigationMenuComponent({
                         </Link>
                         <Button
                             variant="ghost"
+                            id="mobile-menu-button"
                             className="px-1 hover:bg-bg-black md:hidden"
                             onClick={() => setShowMobileMenu(!showMobileMenu)}
                         >

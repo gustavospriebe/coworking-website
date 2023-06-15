@@ -80,6 +80,7 @@ export function Footer() {
                 <div className="mt-8 flex justify-center space-x-6">
                     <span className="m-auto inline-flex w-full justify-center gap-3 md:w-auto md:justify-start">
                         <Link
+                            id="instagram"
                             href="https://www.instagram.com/almaz.coworking/"
                             target="_blank"
                             className="pointer h-6 w-6 fill-black transition hover:text-green-principal"
@@ -88,16 +89,18 @@ export function Footer() {
                             <Instagram />
                         </Link>
                         <Link
+                            id="phone"
                             href="https://api.whatsapp.com/send?phone=5548996294577&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida"
                             target="_blank"
                             className="pointer h-6 w-6 fill-black transition hover:text-green-principal"
                         >
-                            <span className="sr-only">Linkedin</span>
+                            <span className="sr-only">Telefone</span>
                             <Phone />
                         </Link>
                         <a
                             href="mailto:contato@almazco.com.br"
                             target="_blank"
+                            id="email"
                             className="pointer h-6 w-6 fill-black transition hover:text-green-principal"
                         >
                             <span className="sr-only">Email</span>

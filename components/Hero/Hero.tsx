@@ -29,6 +29,7 @@ export function Hero() {
                                 buttonVariants({ size: "lg" }),
                                 "text-principal gap-2 bg-green-principal font-exotwo hover:bg-green-principal/70"
                             )}
+                            id="btn-contato"
                         >
                             <p>Entre em contato</p>
                             <ArrowRight size={18} />
@@ -44,6 +45,7 @@ export function Hero() {
                                 }),
                                 "border-green-principal font-exotwo font-medium text-whiter hover:bg-green-principal/70 hover:text-whiter "
                             )}
+                            id="btn-agende"
                         >
                             Agende uma visita
                         </Link>

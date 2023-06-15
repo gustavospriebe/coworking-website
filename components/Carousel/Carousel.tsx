@@ -46,6 +46,7 @@ export function CarouselComponent() {
                                         buttonVariants({ size: "lg" }),
                                         "text-principal max-w-[220px] bg-green-principal font-exotwo hover:bg-green-principal/70 sm:w-2/4"
                                     )}
+                                    id='btn-conheca'
                                 >
                                     <p>Conheça o Almaz</p>
                                 </Link>

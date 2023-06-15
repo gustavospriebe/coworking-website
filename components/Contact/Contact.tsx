@@ -138,6 +138,7 @@ export function Contact() {
                                     "text-principal mx-auto block w-1/2 gap-2 bg-green-principal font-exo hover:bg-green-principal/70"
                                 )}
                                 type="submit"
+                                id='btn-form'
                             >
                                 Enviar
                             </Button>
