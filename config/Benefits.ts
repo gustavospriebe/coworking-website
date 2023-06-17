@@ -8,7 +8,7 @@ import praticidade from "@/public/benefits/praticidade.svg";
 export const benefitsConfig: Benefits = {
     Benefits: [
         {
-            title: "Credibilidade/Destaque",
+            title: "Credibilidade / Destaque",
             description:
                 "Localização privilegiada no centro de Tubarão, Santa Catarina. Arquitetura criativa e inovadora, sua empresa no primeiro edifício modular da América Latina.",
             image: credibilidade,
