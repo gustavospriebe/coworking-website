@@ -3,13 +3,14 @@ import { FAQ } from "@/components/FAQ/FAQ";
 import { Hero } from "@/components/Hero/Hero";
 import { Partners } from "@/components/Partners/Partners";
 import { Footer } from "@/components/Footer/Footer";
+import { Benefits } from "@/components/Benefits/Benefits";
 import { Contact } from "@/components/Contact/Contact";
 
 export default function Home() {
     return (
         <>
             <Hero />
-            {/* beneficios branco */}
+            <Benefits />
             {/* planos preto */}
             <Partners />
             <CarouselComponent />
