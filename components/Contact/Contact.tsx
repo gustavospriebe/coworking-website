@@ -52,7 +52,10 @@ export function Contact() {
     }
 
     return (
-        <div className="w-full px-7 py-16 md:px-12 lg:px-16 lg:py-24 ">
+        <div
+            id="contato"
+            className="w-full px-7 py-16 md:px-12 lg:px-16 lg:py-24 "
+        >
             <div className=" mx-auto w-full max-w-7xl">
                 <SectionHeader
                     sectionName="Contato"
@@ -138,7 +141,7 @@ export function Contact() {
                                     "text-principal mx-auto block w-1/2 gap-2 bg-green-principal font-exo hover:bg-green-principal/70"
                                 )}
                                 type="submit"
-                                id='btn-form'
+                                id="btn-form"
                             >
                                 Enviar
                             </Button>

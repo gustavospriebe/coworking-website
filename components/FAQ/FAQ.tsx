@@ -8,6 +8,17 @@ import { faqConfig } from "@/config/FAQ,";
 import { Separator } from "../ui/separator";
 import { SectionHeader } from "../SectionHeader";
 
+const data = [
+    {
+        creationDate: "0001-01-01T00:00:00Z",
+        city: "Rio de Janeiro",
+        siteURL:
+            "https://www.ingresso.com/filme/j-hope-in-the-box?city=rio-de-janeiro&partnership=cine-show-tubarao&ing_source=api&ing_medium=link-filme&ing_campaign=cine-show-tubarao&ing_content=j-hope-in-the-box",
+        nationalSiteURL:
+            "https://www.ingresso.com/filme/j-hope-in-the-box?city=rio-de-janeiro&partnership=cine-show-tubarao&ing_source=api&ing_medium=link-filme&ing_campaign=cine-show-tubarao&ing_content=j-hope-in-the-box",
+    },
+];
+
 export function FAQ() {
     const items = faqConfig.FAQ;
 

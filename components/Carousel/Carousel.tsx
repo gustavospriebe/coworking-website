@@ -37,6 +37,7 @@ export function CarouselComponent() {
                                 <Image
                                     className="aspect-[4/3] w-full object-cover shadow-md  after:animate-in lg:ml-auto"
                                     alt="hero"
+                                    loading="lazy"
                                     src={items[activeHighlight].image}
                                 />
                                 <Link

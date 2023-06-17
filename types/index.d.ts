@@ -7,6 +7,15 @@ export interface NavItem {
 export interface NavMenu {
     NavMenu: NavItem[];
 }
+export interface FooterItem {
+    title: string;
+    href: string;
+    disabled?: boolean;
+}
+
+export interface FooterMenu {
+    FooterMenu: FooterItem[];
+}
 
 export interface CarouselItem {
     title: string;

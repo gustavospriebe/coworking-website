@@ -1,81 +1,29 @@
 import { Instagram, Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import { Map } from "../Map";
+import { footerConfig } from "@/config/Footer";
 
 export function Footer() {
+    const { FooterMenu } = footerConfig;
+
     return (
         <footer className="bg-white">
-            <div className="google-map-code">
-                <iframe
-                    src="https://www.google.com/maps/embed?origin=mfe&pb=!1m4!2m1!1sAv.+Marcolino+Martins+Cabral,+2644+-+Vila+Moema,+Tubarão+-+SC,+88705-002!5e0!6i16"
-                    width="100%"
-                    title="Mapa de localização do Almaz Coworking"
-                    height="600"
-                    loading="lazy"
-                    style={{ border: 0 }}
-                    allowFullScreen={false}
-                    aria-hidden="false"
-                    className="map"
-                    tabIndex={0}
-                ></iframe>
-            </div>
+            <Map />
             <div className="mx-auto max-w-7xl overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
                 <nav
                     className="-mx-5 -my-2 flex flex-wrap justify-center font-nunitosans"
                     aria-label="Footer"
                 >
-                    <div className="px-5 py-2">
-                        <a
-                            href="#"
-                            className="text-sm text-gray-500 hover:text-green-secundary"
-                        >
-                            Planos
-                        </a>
-                    </div>
-
-                    <div className="px-5 py-2">
-                        <a
-                            href="#"
-                            className="text-sm text-gray-500 hover:text-green-secundary"
-                        >
-                            Produtos
-                        </a>
-                    </div>
-
-                    <div className="px-5 py-2">
-                        <a
-                            href="#"
-                            className="text-sm text-gray-500 hover:text-green-secundary"
-                        >
-                            Blog
-                        </a>
-                    </div>
-
-                    <div className="px-5 py-2">
-                        <a
-                            href="#"
-                            className="text-sm text-gray-500 hover:text-green-secundary"
-                        >
-                            Política de Privacidade
-                        </a>
-                    </div>
-
-                    <div className="px-5 py-2">
-                        <a
-                            href="#"
-                            className="text-sm text-gray-500 hover:text-green-secundary"
-                        >
-                            Seja um franqueado
-                        </a>
-                    </div>
-
-                    <div className="px-5 py-2">
-                        <a
-                            href="#"
-                            className="text-sm text-gray-500 hover:text-green-secundary"
-                        >
-                            Partners
-                        </a>
-                    </div>
+                    {FooterMenu.map((item, index) => (
+                        <div key={index} className="px-5 py-2">
+                            <a
+                                href={item.href}
+                                className="text-sm text-gray-500 hover:text-green-secundary"
+                            >
+                                {item.title}
+                            </a>
+                        </div>
+                    ))}
                 </nav>
                 <div className="mt-8 flex justify-center space-x-6">
                     <span className="m-auto inline-flex w-full justify-center gap-3 md:w-auto md:justify-start">
