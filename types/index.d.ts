@@ -20,11 +20,20 @@ export interface FooterMenu {
 export interface CarouselItem {
     title: string;
     description: string;
-    image?: StaticImageData;
+    image?: any;
 }
 
 export interface Carousel {
     Carousel: CarouselItem[];
+}
+export interface BenefitsItem {
+    title: string;
+    description: string;
+    image?: any;
+}
+
+export interface Benefits {
+    Benefits: BenefitsItem[];
 }
 
 export interface PartnersItem {

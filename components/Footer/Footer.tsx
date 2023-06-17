@@ -1,7 +1,7 @@
+import { footerConfig } from "@/config/Footer";
 import { Instagram, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { Map } from "../Map";
-import { footerConfig } from "@/config/Footer";
 
 export function Footer() {
     const { FooterMenu } = footerConfig;
