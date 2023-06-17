@@ -37,7 +37,7 @@ export function Partners() {
                                 className="bg-gray-5 col-span-1 flex justify-center px-8 py-8"
                             >
                                 <Image
-                                    className="max-h-12"
+                                    className="max-h-12 opacity-50"
                                     src={item.logo}
                                     alt=""
                                 />

@@ -61,7 +61,6 @@ export function Contact() {
                     sectionName="Contato"
                     sectionHeader="Entre em contato, conheça a Almaz"
                     colorHeader="text-black"
-                    colorSeparator="bg-whiter/20"
                 />
                 <div className="">
                     <Form {...form}>

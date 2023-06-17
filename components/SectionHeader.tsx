@@ -20,7 +20,7 @@ export function SectionHeader({
         <div>
             <p
                 className={cn(
-                    "mb-2 inline font-semibold p-1 font-exotwo",
+                    "mb-2 inline p-1 font-exotwo font-semibold",
                     colorName ?? "text-green-principal"
                 )}
             >
@@ -28,7 +28,7 @@ export function SectionHeader({
             </p>
             <p
                 className={cn(
-                    "font-exo text-2xl font-medium tracking-tight sm:text-4xl",
+                    "font-exo text-3xl font-semibold tracking-tight sm:text-4xl",
                     colorHeader ?? "text-whiter"
                 )}
             >

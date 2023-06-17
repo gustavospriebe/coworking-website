@@ -29,7 +29,7 @@ export interface Carousel {
 export interface BenefitsItem {
     title: string;
     description: string;
-    image?: any;
+    icon: any;
 }
 
 export interface Benefits {
