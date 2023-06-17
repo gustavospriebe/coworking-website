@@ -10,15 +10,15 @@ import { Blog } from "@/components/Blog/Blog";
 export default function Home() {
     return (
         <>
-            {/* <Hero /> */}
-            {/* <Benefits /> */}
+            <Hero />
+            <Benefits />
             {/* planos preto */}
-            {/* <Partners /> */}
-            {/* <CarouselComponent /> */}
+            <Partners />
+            <CarouselComponent />
             <FAQ />
             <Blog />
-            {/* <Contact /> */}
-            {/* <Footer /> */}
+            <Contact />
+            <Footer />
         </>
     );
 }

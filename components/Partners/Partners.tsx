@@ -30,7 +30,7 @@ export function Partners() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-2 lg:mt-0 lg:grid-cols-3">
+                    <div className="mt-8 grid grid-cols-2 gap-0.5 sm:grid-cols-3 lg:mt-0 lg:grid-cols-3">
                         {items.map((item, index) => (
                             <div
                                 key={index}

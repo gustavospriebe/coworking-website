@@ -54,3 +54,16 @@ export interface FAQItem {
 export interface FAQ {
     FAQ: FAQItem[];
 }
+
+export interface BlogPost {
+    title: string;
+    description: string;
+    image: any;
+    tag: string;
+    link: string;
+    date: string;
+}
+
+export interface Blog {
+    Blog: BlogPost[];
+}

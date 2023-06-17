@@ -44,7 +44,7 @@ export function FAQ() {
                                 <AccordionTrigger className="font-exo text-whiter">
                                     {item.question}
                                 </AccordionTrigger>
-                                <AccordionContent className="font-nunitosans text-whiter">
+                                <AccordionContent className="font-nunitosans text-whiter/80">
                                     {item.answer}
                                 </AccordionContent>
                             </AccordionItem>
