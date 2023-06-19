@@ -56,7 +56,7 @@ export function NavigationMenuComponent({
                                               <NavigationMenuLink
                                                   className={cn(
                                                       navigationBarTriggerStyle(),
-                                                      "font-exo"
+                                                      "font-exo, hover:text-whiter"
                                                   )}
                                               >
                                                   {item.title}
