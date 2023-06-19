@@ -6,14 +6,14 @@ import { FAQ } from "@/components/FAQ/FAQ";
 import { Hero } from "@/components/Hero/Hero";
 import { Map } from "@/components/Map";
 import { Partners } from "@/components/Partners/Partners";
-import { Plans } from "@/components/Plans/Plans";
+import { Structure } from "@/components/Structure/Structure";
 
 export default function Home() {
     return (
         <>
             {/* <Hero /> */}
             {/* <Benefits /> */}
-            <Plans />
+            <Structure />
             {/* <Partners /> */}
             {/* <CarouselComponent /> */}
             {/* <FAQ /> */}

@@ -132,14 +132,12 @@
         }
     }
 
-    .effect-hover:hover {
-        .card--display {
-            display: none;
-        }
+    .card-details {
+        flex: 1;
+    }
 
-        .card--hover {
-            display: block;
-        }
+    .card-details:hover {
+        flex: 4;
     }
 }
 
