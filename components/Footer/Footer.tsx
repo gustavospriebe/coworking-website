@@ -1,14 +1,12 @@
 import { footerConfig } from "@/config/Footer";
 import { Instagram, Mail, Phone } from "lucide-react";
 import Link from "next/link";
-import { Map } from "../Map";
 
 export function Footer() {
     const { FooterMenu } = footerConfig;
 
     return (
         <footer className="bg-white">
-            <Map />
             <div className="mx-auto max-w-7xl overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
                 <nav
                     className="-mx-5 -my-2 flex flex-wrap justify-center font-nunitosans"

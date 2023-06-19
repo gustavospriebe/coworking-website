@@ -8,7 +8,7 @@ export function Hero() {
         <div className="hero-bg w-full px-7 md:px-12 lg:px-16">
             <div className=" mx-auto w-full max-w-7xl space-y-6 py-36 lg:py-48">
                 <div className=" flex flex-1 flex-col items-center gap-7 text-center">
-                    <p className="mt-8 font-exotwo text-4xl font-bold tracking-tight text-whiter md:text-7xl lg:mt-0">
+                    <h1 className="mt-8 font-exotwo text-4xl font-bold tracking-tight text-whiter md:text-7xl lg:mt-0">
                         Um ponto de
                         <span className="md:block">
                             {" "}
@@ -17,7 +17,7 @@ export function Hero() {
                                 conexões construtivas
                             </span>
                         </span>
-                    </p>
+                    </h1>
                     <p className="max-w-3xl font-exo text-sm leading-normal text-quaternary sm:text-lg sm:leading-8  lg:text-xl">
                         Sua empresa em um espaço referência na cidade de Tubarão
                     </p>

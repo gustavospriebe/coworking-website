@@ -57,7 +57,7 @@ export function Blog() {
                                 <a
                                     href={item.link}
                                     title=""
-                                    className="mt-5 inline-flex items-center justify-center border-b-2 border-transparent pb-0.5 text-base font-semibold text-green-principal transition-all duration-200 hover:border-green-principal focus:border-green-principal"
+                                    className="mt-5 inline-flex items-center justify-center border-b-2 border-transparent text-base font-semibold text-green-principal transition-all duration-200 hover:border-green-principal focus:border-green-principal"
                                 >
                                     Continue lendo
                                     <svg
@@ -84,7 +84,7 @@ export function Blog() {
                         buttonVariants({ size: "lg" }),
                         "text-principal mx-auto mt-8 w-full max-w-[220px] bg-green-principal font-exotwo hover:bg-green-principal/70 sm:w-2/4"
                     )}
-                    id="btn-conheca"
+                    id="btn-blog"
                 >
                     <p>Leia outros artigos</p>
                 </Link>
