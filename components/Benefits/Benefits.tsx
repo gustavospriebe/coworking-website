@@ -15,13 +15,15 @@ export function Benefits() {
                     {Benefits.map((item, index) => (
                         <div key={index}>
                             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100 text-black lg:mx-auto">
-                                <item.icon color="#84E341" size={30} />
+                                <item.icon color="#84E341" size={32} />
                             </div>
-                        <p className="mt-4 break-normal text-lg font-medium leading-6 text-black">
-                                {item.title}
-                            </p>
-                            <div className="mt-4 text-base text-gray-500">
-                                {item.description}
+                            <div>
+                                <p className="mt-4 break-normal text-lg font-medium leading-6 text-black">
+                                    {item.title}
+                                </p>
+                                <p className="mt-4 text-base text-gray-500">
+                                    {item.description}
+                                </p>
                             </div>
                         </div>
                     ))}

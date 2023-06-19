@@ -25,7 +25,7 @@ export function Blog() {
                         >
                             <div className="p-5 md:p-8 lg:p-5">
                                 <div className="relative">
-                                    <a
+                                    <Link
                                         href={item.link}
                                         title=""
                                         className="aspect-w-4 aspect-h-3 block"
@@ -35,7 +35,7 @@ export function Blog() {
                                             src={item.image}
                                             alt=""
                                         />
-                                    </a>
+                                    </Link>
 
                                     <div className="absolute left-4 top-4">
                                         <span className="rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-widest text-gray-900">
@@ -47,16 +47,20 @@ export function Blog() {
                                     {item.date}
                                 </span>
                                 <p className="mt-5 text-2xl font-semibold">
-                                    <a href="#" title="" className="text-black">
+                                    <Link
+                                        href="#"
+                                        title=""
+                                        className="text-black"
+                                    >
                                         {item.title}
-                                    </a>
+                                    </Link>
                                 </p>
                                 <p className="mt-4 text-base text-gray-600">
                                     {item.description}
                                 </p>
-                                <a
+                                <Link
                                     href={item.link}
-                                    title=""
+                                    title="Continue lendo"
                                     className="mt-5 inline-flex items-center justify-center border-b-2 border-transparent text-base font-semibold text-green-principal transition-all duration-200 hover:border-green-principal focus:border-green-principal"
                                 >
                                     Continue lendo
@@ -72,7 +76,7 @@ export function Blog() {
                                             clip-rule="evenodd"
                                         />
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     ))}

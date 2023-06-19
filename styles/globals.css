@@ -131,6 +131,16 @@
             background-position: 24% 75%;
         }
     }
+
+    .effect-hover:hover {
+        .card--display {
+            display: none;
+        }
+
+        .card--hover {
+            display: block;
+        }
+    }
 }
 
 @layer base {

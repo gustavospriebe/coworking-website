@@ -43,7 +43,7 @@ export function Hero() {
                                     variant: "outline",
                                     size: "lg",
                                 }),
-                                "border-green-principal font-exotwo font-medium text-whiter hover:bg-green-principal/70 hover:text-whiter "
+                                "border-green-principal/70 font-exotwo font-medium text-whiter hover:bg-green-principal/70 hover:text-whiter "
                             )}
                             id="btn-agende"
                         >

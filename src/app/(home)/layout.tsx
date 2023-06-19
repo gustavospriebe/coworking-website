@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer/Footer";
 import { NavigationMenuComponent } from "@/components/NavBar/NavMenu";
 
 interface HomeProps {
@@ -9,7 +10,7 @@ export default function Home({ children }: HomeProps) {
         <div className="">
             <NavigationMenuComponent />
             {children}
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
