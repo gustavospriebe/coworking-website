@@ -4,7 +4,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { faqConfig } from "@/config/FAQ,";
+import { faqConfig } from "@/config/FAQ";
 import { Separator } from "../ui/separator";
 import { SectionHeader } from "../SectionHeader";
 

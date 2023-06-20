@@ -11,15 +11,15 @@ import { Structure } from "@/components/Structure/Structure";
 export default function Home() {
     return (
         <>
-            <Hero />
-            <Benefits />
+            {/* <Hero /> */}
+            {/* <Benefits /> */}
             <Structure />
-            <Partners />
-            <CarouselComponent />
-            <Blog />
-            <FAQ />
-            <Contact />
-            <Map />
+            {/* <Partners /> */}
+            {/* <CarouselComponent /> */}
+            {/* <Blog /> */}
+            {/* <FAQ /> */}
+            {/* <Contact /> */}
+            {/* <Map /> */}
         </>
     );
 }

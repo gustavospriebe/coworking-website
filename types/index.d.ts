@@ -67,3 +67,10 @@ export interface BlogPost {
 export interface Blog {
     Blog: BlogPost[];
 }
+
+// export interface Structure {
+//     category : {	
+
+//     }
+// }
+
