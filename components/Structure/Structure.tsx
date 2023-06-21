@@ -14,7 +14,7 @@ export function Structure() {
                     sectionHeader="Espaços que atendem suas necessidades"
                     colorSeparator="bg-whiter/20"
                 />
-                <p className="text-whiter">
+                <p className="text-whiter font-nunitosans px-2">
                     Almaz Coworking é um espaço colaborativo, estrategicamente
                     pensado, com objetivo de conectar pessoas, fomentar
                     networking e colaborar para a construção de um ambiente
