@@ -1,16 +1,16 @@
-// import { Blog } from "types";
+import box2 from "@/public/box02.webp";
+import box1 from "@/public/box1.webp";
+import eventos from "@/public/eventos.webp";
+import level from "@/public/level.jpg";
+import sala1e3 from "@/public/sala1e3.webp";
+import sala2 from "@/public/sala2.webp";
 import structure1 from "@/public/structure1.webp";
 import structure2 from "@/public/structure2.webp";
 import structure3 from "@/public/structure3.webp";
-import box2 from "@/public/box02.webp";
-import sala1e3 from "@/public/sala1e3.webp";
-import sala2 from "@/public/sala2.webp";
-import box1 from "@/public/box1.webp";
 import treinamento from "@/public/treinamento.webp";
-import eventos from "@/public/eventos.webp";
-import level from "@/public/level.jpg";
+import { Structure } from "types";
 
-export const structureConfig = {
+export const structureConfig: Structure = {
     Structure: [
         {
             category: "Salas de Reunião",
@@ -31,8 +31,8 @@ export const structureConfig = {
                     name: "Sala 2",
                     image: sala2,
                     description: [
-                        "• Até 6 pessoas;",
-                        "• Smart TV;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
@@ -55,22 +55,24 @@ export const structureConfig = {
                     name: "Box 1",
                     image: box1,
                     description: [
-                        "• Até 4 pessoas;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
-                        "• Ambiente descontraído e aconchegante.",
+                        "• Design moderno.",
                     ],
                 },
                 {
                     name: "Box 2",
                     image: box2,
                     description: [
-                        "• Até 4 pessoas;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
-                        "• Ambiente descontraído e aconchegante.",
+                        "• Design moderno.",
                     ],
                 },
             ],
@@ -82,22 +84,24 @@ export const structureConfig = {
                     name: "Estações de trabalho",
                     image: structure2,
                     description: [
-                        "• Até 4 pessoas;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
-                        "• Ambiente descontraído e aconchegante.",
+                        "• Design moderno.",
                     ],
                 },
                 {
                     name: "Escritório privado",
                     image: structure3,
                     description: [
-                        "• Até 4 pessoas;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
-                        "• Ambiente descontraído e aconchegante.",
+                        "• Design moderno.",
                     ],
                 },
 
@@ -105,33 +109,36 @@ export const structureConfig = {
                     name: "Sala de treinamento",
                     image: treinamento,
                     description: [
-                        "• Até 4 pessoas;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
-                        "• Ambiente descontraído e aconchegante.",
+                        "• Design moderno.",
                     ],
                 },
                 {
                     name: "Espaço para eventos",
                     image: eventos,
                     description: [
-                        "• Até 4 pessoas;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
-                        "• Ambiente descontraído e aconchegante.",
+                        "• Design moderno.",
                     ],
                 },
                 {
                     name: "Escritório virtual",
                     image: level,
                     description: [
-                        "• Até 4 pessoas;",
+                        "• Até 8 pessoas;",
+                        "• TV;",
                         "• Ambiente climatizado;",
                         "• Internet de alta velocidade;",
                         "• Café e água disponíveis;",
-                        "• Ambiente descontraído e aconchegante.",
+                        "• Design moderno.",
                     ],
                 },
             ],

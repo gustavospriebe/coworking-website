@@ -2,13 +2,13 @@
 
 import { SectionHeader } from "@/components/SectionHeader";
 import { carouselConfig } from "@/config/Carousel";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import "react-awesome-slider/dist/styles.css";
-import { CardComponent } from "./Card";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
+import { CardComponent } from "./Card";
 
 export function CarouselComponent() {
     const items = carouselConfig.Carousel;
@@ -27,7 +27,7 @@ export function CarouselComponent() {
     return (
         <>
             <div
-                id="teste"
+                id="estrutura"
                 className="w-full bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24 "
             >
                 <div className="mx-auto w-full max-w-7xl">

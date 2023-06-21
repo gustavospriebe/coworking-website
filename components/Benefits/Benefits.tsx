@@ -8,7 +8,7 @@ export function Benefits() {
             <div className="mx-auto w-full max-w-7xl">
                 <SectionHeader
                     sectionName="Benefícios"
-                    sectionHeader="Porque ter seu espaço conosco"
+                    sectionHeader="Porque ter sua empresa conosco"
                     colorHeader="text-black"
                 />
                 <div className="grid grid-cols-2 gap-12 pt-4 md:grid-cols-3 lg:space-y-0 lg:text-center">

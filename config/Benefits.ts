@@ -1,11 +1,11 @@
-import { Benefits } from "types";
 import {
+    Clock4,
     Lightbulb,
     MapPin,
     MessagesSquare,
     Newspaper,
-    Clock4,
 } from "lucide-react";
+import { Benefits } from "types";
 
 export const benefitsConfig: Benefits = {
     Benefits: [

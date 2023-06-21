@@ -68,9 +68,15 @@ export interface Blog {
     Blog: BlogPost[];
 }
 
-// export interface Structure {
-//     category : {	
+export interface StructureItem {
+    category: string;
+    assets: {
+        image: StaticImageData;
+        name: string;
+        description: string[];
+    }[];
+}
 
-//     }
-// }
-
+export interface Structure {
+    Structure: StructureItem[];
+}

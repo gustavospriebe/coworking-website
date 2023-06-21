@@ -3,17 +3,16 @@ import { NavMenu } from "types";
 export const navConfig: NavMenu = {
     NavMenu: [
         {
-            title: "Planos",
-            // # serve pra linkar a uma id da mesma página e faz com que o scroll vá até ela
-            href: "/",
+            title: "Salas",
+            href: "#salas",
         },
         {
-            title: "Produtos",
-            href: "/",
+            title: "Estrutura",
+            href: "#estrutura",
         },
         {
             title: "Blog",
-            href: "/",
+            href: "#blog",
         },
         {
             title: "Contato",

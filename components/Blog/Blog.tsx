@@ -9,7 +9,10 @@ export function Blog() {
     const { Blog } = blogConfig;
 
     return (
-        <section className="w-full px-7 py-16 sm:px-12 lg:px-16 lg:py-24">
+        <section
+            id="blog"
+            className="w-full px-7 py-16 sm:px-12 lg:px-16 lg:py-24"
+        >
             <div className="mx-auto flex max-w-7xl flex-col">
                 <SectionHeader
                     sectionName="Blog"
@@ -48,7 +51,7 @@ export function Blog() {
                                 </span>
                                 <p className="mt-5 text-2xl font-semibold">
                                     <Link
-                                        href="#"
+                                        href={item.link}
                                         title=""
                                         className="text-black"
                                     >
@@ -82,7 +85,7 @@ export function Blog() {
                     ))}
                 </div>
                 <Link
-                    href="https://api.whatsapp.com/send?phone=5548996294577&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida"
+                    href="https://almazco.com.br"
                     target="_blank"
                     className={cn(
                         buttonVariants({ size: "lg" }),

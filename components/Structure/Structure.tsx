@@ -6,11 +6,14 @@ export function Structure() {
     const { Structure } = structureConfig;
 
     return (
-        <div className="w-full bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24">
+        <div
+            id="salas"
+            className="w-full bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24"
+        >
             <div className="mx-auto w-full max-w-7xl">
                 <SectionHeader
-                    sectionName="Nosso espaço"
-                    sectionHeader="Conheça tudo que podemos oferecer"
+                    sectionName="Nossas salas"
+                    sectionHeader="Espaços que atendem suas necessidades"
                     colorSeparator="bg-whiter/20"
                 />
                 {Structure.map((item, index) => (
