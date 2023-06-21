@@ -42,7 +42,7 @@ export function CardComponent({
                         <CardTitle className="font-exotwo  font-bold">
                             {items[index].title}
                         </CardTitle>
-                        <CardDescription className="hidden font-nunitosans text-whiter/40 sm:flex">
+                        <CardDescription className="hidden font-nunitosans text-[#8c8c8c] sm:flex">
                             {items[index].description}
                         </CardDescription>
                     </CardHeader>
