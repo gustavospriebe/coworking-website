@@ -28,7 +28,7 @@ export function CarouselComponent() {
         <>
             <div
                 id="estrutura"
-                className="w-full bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24 "
+                className="w-full bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24"
             >
                 <div className="mx-auto w-full max-w-7xl">
                     <div className="relative m-auto items-center align-middle">

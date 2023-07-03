@@ -7,14 +7,17 @@ export function Structure() {
     const { Structure } = structureConfig;
 
     return (
-        <div id="salas" className="w-full bg-bg-black px-5 py-16 ">
+        <div
+            id="salas"
+            className="w-full bg-bg-black px-7 py-16 md:px-12 lg:px-16 lg:py-24"
+        >
             <div className="mx-auto w-full max-w-7xl">
                 <SectionHeader
                     sectionName="Nossas salas"
                     sectionHeader="Espaços que atendem suas necessidades"
                     colorSeparator="bg-whiter/20"
                 />
-                <p className="text-whiter font-nunitosans px-2">
+                <p className="px-2 font-nunitosans text-whiter">
                     Almaz Coworking é um espaço colaborativo, estrategicamente
                     pensado, com objetivo de conectar pessoas, fomentar
                     networking e colaborar para a construção de um ambiente
@@ -73,13 +76,13 @@ export function Structure() {
                                         <Image
                                             src={asset.image}
                                             alt=""
-                                            className="h-full w-full rounded-3xl sm:max-w-[335px] object-cover opacity-75 brightness-75"
+                                            className="h-full w-full rounded-3xl object-cover opacity-75 brightness-75 sm:max-w-[335px]"
                                         />
                                         <div className="flex w-full flex-col items-center justify-center gap-4 px-2 text-whiter">
                                             <p className="font-exo text-xl font-semibold">
                                                 {asset.name}
                                             </p>
-                                            <div className="space-y-2 font-nunitosans text-sm mt-2">
+                                            <div className="mt-2 space-y-2 font-nunitosans text-sm">
                                                 {asset.description.map(
                                                     (desc, descIndex) => (
                                                         <p
