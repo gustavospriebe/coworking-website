@@ -13,9 +13,9 @@ export default function Home() {
         <>
             <Hero />
             <Benefits />
-            <Structure />
-            <Partners />
             <CarouselComponent />
+            <Partners />
+            <Structure />
             <Blog />
             <FAQ />
             <Contact />
