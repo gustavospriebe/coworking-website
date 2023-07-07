@@ -1,7 +1,8 @@
+import { Separator } from "@/components/ui/separator";
 import { structureConfig } from "@/config/Structure";
 import Image from "next/image";
+import Balancer from "react-wrap-balancer";
 import { SectionHeader } from "../SectionHeader";
-import { Separator } from "@/components/ui/separator";
 
 export function Structure() {
     const { Structure } = structureConfig;
@@ -43,7 +44,9 @@ export function Structure() {
                                         />
                                         <div className="absolute z-20 flex w-full flex-col items-center justify-center gap-4 px-2 pb-10 text-whiter group-hover:justify-between lg:flex-row lg:gap-0 lg:group-hover:justify-around">
                                             <p className="font-exo text-lg font-semibold md:text-xl md:group-hover:text-2xl">
-                                                {asset.name}
+                                                <Balancer>
+                                                    {asset.name}
+                                                </Balancer>
                                             </p>
                                             <div className="block space-y-2 font-nunitosans text-sm md:hidden md:text-base md:group-hover:block">
                                                 {asset.description.map(
@@ -63,20 +66,22 @@ export function Structure() {
                             </div>
                         </div>
                         <div className="mt-8 flex flex-col items-center gap-4 space-y-4 md:hidden">
-                            <p className="font-exotwo text-2xl font-semibold text-whiter lg:w-[150px]">
+                            <p className="font-exotwo text-2xl font-semibold text-whiter">
                                 {item.category}
                             </p>
                             <Separator className="my-5 bg-whiter/20" />
-                            <div className="flex w-full flex-col justify-center gap-6 md:flex-row ">
+                            <div className="flex w-full gap-6 overflow-x-scroll">
                                 {item.assets.map((asset, assetIndex) => (
                                     <div
                                         key={assetIndex}
-                                        className=" group flex cursor-pointer flex-col items-center justify-center gap-6  sm:flex-row"
+                                        className="flex w-full flex-col items-center justify-center gap-6"
                                     >
                                         <Image
                                             src={asset.image}
                                             alt=""
-                                            className="h-full w-full rounded-3xl object-cover opacity-75 brightness-75 sm:max-w-[335px]"
+                                            className="h-full 
+                                            w-screen
+                                            max-w-[240px] rounded-3xl object-cover opacity-75 brightness-75"
                                         />
                                         <div className="flex w-full flex-col items-center justify-center gap-4 px-2 text-whiter">
                                             <p className="font-exo text-xl font-semibold">
