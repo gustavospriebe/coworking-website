@@ -1,5 +1,6 @@
 import { benefitsConfig } from "@/config/Benefits";
 import { SectionHeader } from "../SectionHeader";
+import Balancer from "react-wrap-balancer";
 
 export function Benefits() {
     const { Benefits } = benefitsConfig;
@@ -22,7 +23,7 @@ export function Benefits() {
                                     {item.title}
                                 </p>
                                 <p className="mt-4 text-base text-gray-500">
-                                    {item.description}
+                                    <Balancer>{item.description}</Balancer>
                                 </p>
                             </div>
                         </div>

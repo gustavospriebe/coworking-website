@@ -2,6 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Balancer } from "react-wrap-balancer";
 
 export function Hero() {
     return (
@@ -9,17 +10,15 @@ export function Hero() {
             <div className=" mx-auto w-full max-w-7xl space-y-6 py-36 lg:py-48">
                 <div className=" flex flex-1 flex-col items-center gap-7 text-center">
                     <h1 className="mt-8 font-exotwo text-4xl font-bold tracking-tight text-whiter md:text-7xl lg:mt-0">
-                        Um ponto de
-                        <span className="md:block">
-                            {" "}
-                            encontro e{" "}
-                            <span className="text-green-secundary md:text-whiter">
-                                conexões construtivas
-                            </span>
-                        </span>
+                        <Balancer>
+                            Um ponto de encontro e conexões construtivas
+                        </Balancer>
                     </h1>
                     <p className="max-w-3xl font-exo text-sm leading-normal text-quaternary sm:text-lg sm:leading-8  lg:text-xl">
-                        Sua empresa em um espaço referência na cidade de Tubarão
+                        <Balancer>
+                            Sua empresa em um espaço referência na cidade de
+                            Tubarão
+                        </Balancer>
                     </p>
                     <div className="flex flex-1 flex-col items-center justify-center gap-7 sm:flex-row ">
                         <Link

@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Balancer from "react-wrap-balancer";
 import { Separator } from "./ui/separator";
 
 interface SectionHeaderProps {
@@ -24,7 +25,7 @@ export function SectionHeader({
                     colorName ?? "text-green-principal"
                 )}
             >
-                {sectionName}
+                <Balancer>{sectionName}</Balancer>
             </p>
             <p
                 className={cn(

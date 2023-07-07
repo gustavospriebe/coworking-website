@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SectionHeader } from "../SectionHeader";
 import { buttonVariants } from "../ui/button";
+import Balancer from "react-wrap-balancer";
 
 export function Blog() {
     const { Blog } = blogConfig;
@@ -55,11 +56,11 @@ export function Blog() {
                                         title=""
                                         className="text-black"
                                     >
-                                        {item.title}
+                                        <Balancer>{item.title}</Balancer>
                                     </Link>
                                 </p>
                                 <p className="mt-4 text-base text-gray-600">
-                                    {item.description}
+                                    <Balancer>{item.description}</Balancer>
                                 </p>
                                 <Link
                                     href={item.link}

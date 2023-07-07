@@ -5,6 +5,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import Balancer from "react-wrap-balancer";
 import { CarouselItem } from "types";
 
 type CardProps = React.ComponentProps<typeof Card>;
@@ -40,10 +41,10 @@ export function CardComponent({
                 >
                     <CardHeader className="space-y-2  p-4">
                         <CardTitle className="font-exotwo  font-bold">
-                            {items[index].title}
+                            <Balancer>{items[index].title}</Balancer>
                         </CardTitle>
                         <CardDescription className="hidden font-nunitosans text-[#8c8c8c] sm:flex">
-                            {items[index].description}
+                            <Balancer>{items[index].description}</Balancer>
                         </CardDescription>
                     </CardHeader>
                 </Card>

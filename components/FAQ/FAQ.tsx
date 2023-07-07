@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { faqConfig } from "@/config/FAQ";
 import { SectionHeader } from "../SectionHeader";
+import Balancer from "react-wrap-balancer";
 
 export function FAQ() {
     const items = faqConfig.FAQ;
@@ -33,7 +34,7 @@ export function FAQ() {
                                     {item.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="font-nunitosans text-whiter/80">
-                                    {item.answer}
+                                    <Balancer>{item.answer}</Balancer>
                                 </AccordionContent>
                             </AccordionItem>
                         ))}

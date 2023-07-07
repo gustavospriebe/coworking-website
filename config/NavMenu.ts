@@ -3,12 +3,12 @@ import { NavMenu } from "types";
 export const navConfig: NavMenu = {
     NavMenu: [
         {
-            title: "Salas",
-            href: "#salas",
-        },
-        {
             title: "Estrutura",
             href: "#estrutura",
+        },
+        {
+            title: "Salas",
+            href: "#salas",
         },
         {
             title: "Blog",
@@ -20,4 +20,3 @@ export const navConfig: NavMenu = {
         },
     ],
 };
-
