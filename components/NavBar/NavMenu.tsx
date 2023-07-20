@@ -14,17 +14,11 @@ import { navConfig } from "@/config/NavMenu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { PropsWithChildren, useState } from "react";
 import { Button, buttonVariants } from "../ui/button";
 import NavMobileMenu from "./NavMobileMenu";
 
-interface NavigationMenuComponentProps {
-    children?: React.ReactNode;
-}
-
-export function NavigationMenuComponent({
-    children,
-}: NavigationMenuComponentProps) {
+export function NavigationMenuComponent() {
     const items = navConfig.NavMenu;
     const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
