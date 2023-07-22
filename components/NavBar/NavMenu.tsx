@@ -14,7 +14,7 @@ import { navConfig } from "@/config/NavMenu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { PropsWithChildren, useState } from "react";
+import { useState } from "react";
 import { Button, buttonVariants } from "../ui/button";
 import NavMobileMenu from "./NavMobileMenu";
 
