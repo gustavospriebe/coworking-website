@@ -1,34 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Coworking Website
 
-## Getting Started
+<!--- https://shields.io --->
 
-First, run the development server:
+![GitHub repo size](https://img.shields.io/github/repo-size/gustavospriebe/coworking-website?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/gustavospriebe/coworking-website?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/gustavospriebe/coworking-website?style=for-the-badge)
+![Github open issues](https://img.shields.io/github/issues/gustavospriebe/coworking-website?style=for-the-badge)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<!--- #################### mudar imagem exemplo #################### --->
+___
+## Table of Contents
+- [Coworking Website](#coworking-website)
+  - [Table of Contents](#table-of-contents)
+    - [🌍 Project Overview](#-project-overview)
+    - [💻 Prerequisites](#-prerequisites)
+    - [🛠 Tools used](#-tools-used)
+    - [🚀 Usage instructions](#-usage-instructions)
+      - [Clone repository](#clone-repository)
+      - [Install dependencies](#install-dependencies)
+      - [Run app](#run-app)
+    - [📫 Contributing with coworking-website](#-contributing-with-coworking-website)
+    - [🤝 Contributors](#-contributors)
+
+---
+### 🌍 Project Overview
+This project was created to develop a brand new website for an Coworking using modern web technologies.
+
+
+___
+### 💻 Prerequisites
+
+- Install LTS Node version.
+
+<!--- #################### mudar pré-requisitos  ####################--->
+___
+### 🛠 Tools used
+
+- Typescript
+- <b>NextJS</b>
+- Tailwind CSS
+- Radix UI
+
+<!--- #################### mudar ferramentas #################### --->
+
+___
+
+### 🚀 Usage instructions
+
+To get started with Coworking Website, follow these steps:
+
+#### Clone repository
+
+```powershell
+  git clone https://github.com/gustavospriebe/coworking-website.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Install dependencies
+Navigate to the project directory and run the following command to install all the required dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```powershell
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Run app
+Start the development server:
 
-## Learn More
+```powershell
+  npm run dev
+```
+Your application should now be accessible at http://localhost:3000.
 
-To learn more about Next.js, take a look at the following resources:
+### 📫 Contributing with coworking-website
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To contribue with coworking-website, follow the steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork this repository.
+2. Create a branch: `git checkout -b <name_branch>`.
+3. Make the changes and confirm: `git commit -m '<message_commit>'`
+4. Send to original repository: `git push origin <main_branch> / <local>`
+5. Send the pull request.
 
-## Deploy on Vercel
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+___
+### 🤝 Contributors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Made with ❤️ by:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/gustavospriebe.png" width="100px;" alt="Foto do Gustavo Priebe no GitHub"/><br>
+        <sub>
+          <b>Gustavo Priebe</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
