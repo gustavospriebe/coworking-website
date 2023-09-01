@@ -1,5 +1,9 @@
 # Coworking Website
 
+### 🌍 Project Overview
+This project was created to develop a brand new website for an Coworking using modern web technologies.
+
+
 <!--- https://shields.io --->
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/gustavospriebe/coworking-website?style=for-the-badge)
@@ -21,11 +25,6 @@ ___
       - [Run app](#run-app)
     - [📫 Contributing with coworking-website](#-contributing-with-coworking-website)
     - [🤝 Contributors](#-contributors)
-
----
-### 🌍 Project Overview
-This project was created to develop a brand new website for an Coworking using modern web technologies.
-
 
 ___
 ### 💻 Prerequisites
